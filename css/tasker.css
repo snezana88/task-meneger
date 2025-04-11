@@ -1,0 +1,60 @@
+main {
+    max-width: 1040px;
+    margin:0 auto;
+}
+.container {
+    background-color: lavender;
+    border: darkblue 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top:50px;
+}
+.task {
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#form-create-task {
+    width: 200px;
+    background-color: lavender;
+    border: darkblue 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top:50px;
+}
+#form-create-task input {
+    margin-top: 10px;
+}
+
+.immediate::after{
+    content: "!";
+    color:red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.conrol-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.btn-remove,
+.btn-edit {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color:darkblue;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-remove:hover,
+.btn-remove:focus,
+.btn-edit:hover,
+.btn-edit:focus {
+    color:blue;
+    transform: scale(1.1);
+}
+
